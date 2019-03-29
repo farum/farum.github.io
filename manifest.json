@@ -1,8 +1,8 @@
 {
   "name": "Farum",
   "short_name": "Farum",
-  "theme_color": "#2196f3",
-  "background_color": "#2196f3",
+  "theme_color": "#630b0b",
+  "background_color": "#15700d",
   "display": "standalone",
   "orientation": "portrait",
   "Scope": "/",
