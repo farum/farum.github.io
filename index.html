@@ -1,110 +1,77 @@
 <!DOCTYPE html>
 <html>
 <head>
-        <link rel="manifest" href="/manifest.json">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Farum - hack2help  </title>
 <style>
 * {
   box-sizing: border-box;
+  box-align: center;
 }
 
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-
-[class*="col-"] {
-  float: left;
-  padding: 15px;
-}
-
-.col-1 {width: 8.33%;}
-.col-2 {width: 16.66%;}
-.col-3 {width: 25%;}
-.col-4 {width: 33.33%;}
-.col-5 {width: 41.66%;}
-.col-6 {width: 50%;}
-.col-7 {width: 58.33%;}
-.col-8 {width: 66.66%;}
-.col-9 {width: 75%;}
-.col-10 {width: 83.33%;}
-.col-11 {width: 91.66%;}
-.col-12 {width: 100%;}
 
 html {
-  font-family: "Lucida Sans", sans-serif;
+  font-family: "Lucida sans",sans-serif;
+  background-color: #630b0b;
 }
 
 .header {
-  background-color: #ffffff;
-  color: #000000;
-  padding: 15px;
+  position:relative;
+  top: -50px;
+  font-size: 50px;
+  text-align: center;
+  color: #ffffff;
 }
-
+.header p{
+  position:relative;
+  top:-90px;
+  font-size: 20px;
+}
 .menu ul{
-  list-style-type: none;
+  list-style-type:none;
   margin: 0;
   padding: 0;
 }
 
+a:link {
+  text-decoration: none;
+}
+
 .menu li {
-  padding: 20px;
-  margin-bottom: 15px;
-  background-color: #e8eef0;
-  color: #181818;
+  width:90%;
+  position: relative;
+  top:-70px;
+  left:5%;
+  border-radius: 50px;
+  padding: 40px;
+  margin-bottom: 30px;
+  background-color: #00e913;
+  color: #ffffff;
+  font-size:20px;
+  font-weight: bold;
+  text-align:center;
   box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 }
 
 .menu li:hover {
-  background-color: #7cc4db;
+  background-color: #15700d;
 }
 
-footer {
-    position: absolute;
-    bottom:0;
-    border-top: 1px solid #d5d5d5;
-    font-size: .8em;
-} 
-.footer ul{
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-.footer li{
-  padding: 10px;
-  margin-bottom: 4px;
-  background-color: #31befa;
-  color: #181818;
-}
 </style>
 </head>
 <body>
 
 <div class="header">
-  <h1>FARUM</h1>
-  <hr>
+  <h1>Farum</h1>
+  <p>Farming Solutions</p>
 </div>
-<div class="col-12">
-    <p>Farum is a forum for farmers, so that farmers and connect and communicate with experts as well as other farmers</p>
-    </div>
-    </div>
 
-<div class="row">
-  <div class="col-12 menu">
+<div class="menu">
     <ul>
-      <li>Ask a question</li>
-      <li>Chat with an expert</li>
-      <li>Donate!</li>
+      <a href="https://www.google.com"><li>Talk to experts</li></a>
+      <li>Ask a Query</li>
+      <li>Donate</li>
     </ul>
-  </div>
-
-    <footer>
-    <div class ="col-12">
-        <li>Contact us: <a href="mailto:"> help@farum.it </a></li>
-    </div>
-    </footer>
+</div>
 
 
 </body>
