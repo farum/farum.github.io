@@ -33,6 +33,7 @@
         color: rgb(255, 255, 255);
         padding: 18px;
         text-align: center;
+        z-index:1;
       }
       .sidepanel {
         height: 100%;
@@ -44,6 +45,7 @@
         overflow-x: hidden;
         padding-top: 60px;
         transition: 0.5s;
+        z-index: 1;
       }
       .searchpanel {
         height: 40%;
@@ -55,6 +57,7 @@
         overflow-x: hidden;
         padding-top: 60px;
         transition: 0.5s;
+        z-index: 1;
       }
       .searchpanel a,
       .sidepanel a {
@@ -64,6 +67,7 @@
         color: #ffffff;
         display: block;
         transition: 0.3s;
+        z-index: 1;
       }
       .sidepanel a:hover {
         color: #f1f1f1;
@@ -74,6 +78,7 @@
         right: 35px;
         font-size: 36px;
         margin-left: 50px;
+        z-index: 1;
       }
       .searchpanel .closebtn {
         position: absolute;
@@ -81,8 +86,10 @@
         left: 25px;
         font-size: 36px;
         margin-right: 50px;
+        z-index: 1;
       }
       .openbtn {
+        z-index:1;
         position: fixed;
         top: 0;
         left: 0;
@@ -93,19 +100,22 @@
         padding: 10px 15px;
         border: none;
       }
-      input {
+     input {
         width: 75%;
         height: 15%;
         position: relative;
         left: 7%;
+        z-index: 1;
       }
       .searchbutton {
         position: relative;
         top: 0px;
         left: 7%;
+        z-index: 1;
       }
       .search {
         position: fixed;
+        z-index:1;
         top: 0;
         right: 0;
         font-size: 20px;
@@ -128,9 +138,8 @@
       .parent {
         position: relative;
         top:80px;
-        text-align:center;
         color:white;
-        z-index:-1;
+        margin-bottom:30px;
       }
 
       form {
@@ -150,7 +159,7 @@
           margin-top: 20px;
           border-radius: 7px;
           text-align: start;
-          
+          z-index:0;
       }
       .open-form {
         display: absolute;
@@ -168,7 +177,6 @@
         top:100px;
         left: 3%;
         width: 90%;
-        z-index:-1;
         border-style: solid;
         border-radius: 7px;
         border-width: 1px;
@@ -188,6 +196,7 @@
         display: block;
         border-radius: 7px;
       }
+
     </style>
 
     <title>
@@ -222,7 +231,7 @@
     <button class="search" onclick="opensearch()">
       <i class="fa fa-search"></i>
     </button>
-
+<div class="content">
     <div class="parent">
       <form class="form">
         <label for="name">Ask a Question</label>
@@ -270,6 +279,7 @@
             </p>
             <p><i class="fa fa-comment"></i> 7   Answers</p>
           </div>
+        </div>
 
     <script>
       function openNav() {
