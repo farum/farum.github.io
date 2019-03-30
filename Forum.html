@@ -129,19 +129,16 @@
       .openbtn:hover {
         background-color: #444;
       }
-
       input {
         display: block;
         margin-bottom: 10px;
       }
-
       .parent {
         position: relative;
         top:80px;
         color:white;
         margin-bottom:30px;
       }
-
       form {
         display:none;  
         position: absolute;
@@ -151,9 +148,7 @@
         width:60%;
         background-color: rgb(121, 16, 16);  
         padding:10px;
-
       }
-
       .form input{           
           padding:10% 40%;
           margin-top: 20px;
@@ -196,7 +191,6 @@
         display: block;
         border-radius: 7px;
       }
-
     </style>
 
     <title>
@@ -255,7 +249,7 @@
         </div>
 
     <div class="questions">
-            <p>
+        <a href=""> <p>
               Q. My son's biology teacher is pushing perversion, what should I do?
               It's bad enough that he teaches the lies of evolutionism. I've kept my
               mouth shut while he does that. But the other day, when I asked my son
@@ -265,10 +259,11 @@
               stuff to my boy.
             </p>
             <p><i class="fa fa-comment"></i> 6 Answers</p>
+            </a>
           </div>
 
     <div class="questions">
-            <p>
+        <a href=""> <p>
               Q. My son's biology teacher is pushing perversion, what should I do?
               It's bad enough that he teaches the lies of evolutionism. I've kept my
               mouth shut while he does that. But the other day, when I asked my son
@@ -278,8 +273,9 @@
               stuff to my boy.
             </p>
             <p><i class="fa fa-comment"></i> 7   Answers</p>
+            </a>
           </div>
-        </div>
+          </div>
 
     <script>
       function openNav() {
@@ -290,14 +286,12 @@
         document.getElementById("mySidepanel").style.width = "0";
         document.getElementById("mysearchpanel").style.width = "100%";
       }
-
       function closeNav() {
         document.getElementById("mySidepanel").style.width = "0";
       }
       function closesearch() {
         document.getElementById("mysearchpanel").style.width = "0";
       }
-
       $(".open-form").click(function() {
         if (!$(this).hasClass("open")) {
           $(".form").css("display", "block");
