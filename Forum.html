@@ -174,19 +174,18 @@
         border-color: black;
         background-color: #9c0000;
         color: rgb(255, 255, 255);
-        padding: 9px;
         text-align: Left;
         margin-top: 50px;
-        text-decoration: none;
       }
       .questions a:hover{
-          background-color:red;
+          background-color: rgb(177, 24, 24);
       }
       .questions a{
         text-decoration: none;
         color: #ffffff;
         padding:9px;
         display: block;
+        border-radius: 7px;
       }
 
       @media screen and (max-height: 450px) {
@@ -317,12 +316,12 @@
       $(".open-form").click(function() {
         if (!$(this).hasClass("open")) {
           $(".form").css("display", "block");
-          $(".questions").css("top","50%")
+          $(".questions").css("top","200px")
           $(this).addClass("open");
           $(this).text("Exit");
         } else {
           $(".form").css("display", "none");
-          $(".questions").css("top","16%")
+          $(".questions").css("top","100px")
           $(this).removeClass("open");
           $(this).text("Ask Question");
         }
